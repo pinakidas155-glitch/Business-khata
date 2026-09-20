@@ -1,2 +1,1 @@
-release: python manage.py migrate
-web: gunicorn khata.wsgi
+web: python manage.py migrate && gunicorn khata.wsgi
